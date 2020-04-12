@@ -4,7 +4,9 @@ archive to your web servers
 """
 from fabric.api import *
 from datetime import datetime
-env.hosts = ['34.74.191.12', '54.90.167.155']
+import os
+
+env.hosts = ['34.74.191.2', '54.90.167.15']
 
 
 def do_pack():
