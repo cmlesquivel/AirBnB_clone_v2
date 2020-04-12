@@ -61,9 +61,9 @@ def do_deploy(archive_path):
 def deploy():
     """Call the functions do_pack and do_deploy"""
 
-    try:
-        archive_path = do_pack()
-        is_deploy = do_deploy(archive_path)
-        return is_deploy
-    except:
+    archive_path = do_pack()
+    if archive_path is None:
         return False
+
+    is_deploy = do_deploy(archive_path)
+    return is_deploy
