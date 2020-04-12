@@ -3,12 +3,16 @@
 """
 
 from fabric.api import *
+import os
 
 env.hosts = ['34.74.191.2', '54.90.167.15']
 
 
 def do_deploy(archive_path):
     """Function that does the deploy"""
+
+    if os.path.isfile(archive_path) is False:
+        return False
 
     try:
         put(archive_path, "/tmp/")
