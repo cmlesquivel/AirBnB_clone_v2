@@ -4,7 +4,7 @@ archive to your web servers
 """
 from fabric.api import *
 from datetime import datetime
-env.hosts = ['34.74.191.2', '54.90.167.15']
+env.hosts = ['34.74.191.12', '54.90.167.155']
 
 
 def do_pack():
@@ -62,7 +62,7 @@ def deploy():
     """Call the functions do_pack and do_deploy"""
 
     archive_path = do_pack()
-    if not archiveve_path:
+    if not archive_path:
         return False
 
     is_deploy = do_deploy(archive_path)
