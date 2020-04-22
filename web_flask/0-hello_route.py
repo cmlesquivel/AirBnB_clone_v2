@@ -10,4 +10,4 @@ def home():
     """ Show into the screen Hello HBNB!"""
     return ('Hello HBNB!')
 
-app.run()
+app.run(host= '0.0.0.0')
