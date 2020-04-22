@@ -12,7 +12,7 @@ def print_hello():
 
 
 @app.route("/hbnb", strict_slashes=False)
-def print_hello():
+def print_hbnb():
     """ Show into the screen HBNB!"""
     return ("HBNB")
 
