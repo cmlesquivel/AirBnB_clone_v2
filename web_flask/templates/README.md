@@ -1,0 +1,1 @@
+folder that save the templates for the app
