@@ -10,4 +10,5 @@ def print_hello():
     """ Show into the screen Hello HBNB!"""
     return ('Hello HBNB!')
 
-app.run(host='0.0.0.0')
+if __name__ "__main__":
+    app.run(host='0.0.0.0')
