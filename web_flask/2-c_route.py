@@ -20,7 +20,8 @@ def print_hbnb():
 @app.route("/c/<text>", strict_slashes=False)
 def print_c_is_fun(text):
     """ Show 'C' plus given text"""
-    return ("C {}".format(text))
+    my_text = text.replace('_', ' ')
+    return ("C {}".format(my_text))
 
 
 if __name__ == "__main__":
