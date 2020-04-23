@@ -18,8 +18,8 @@ def list_states():
 
 @app.teardown_appcontext
 def shotdown_session(exception=None):
-       """ remove the current SQLAlchemy Session: """
-       storage.close()
+    """ remove the current SQLAlchemy Session: """
+    storage.close()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
